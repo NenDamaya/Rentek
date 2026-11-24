@@ -1,0 +1,103 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11435:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+      - OLLAMA_NUM_PARALLEL=1
+      - OLLAMA_MAX_LOADED_MODELS=1
+      - OLLAMA_KEEP_ALIVE=30m
+      - OLLAMA_FLASH_ATTENTION=1
+      - OLLAMA_KV_CACHE_TYPE=q8_0
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - LD_LIBRARY_PATH=/usr/lib/ollama:/usr/lib/ollama/cuda_v13:/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+      - OLLAMA_VULKAN=0
+    runtime: nvidia
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 10s
+      retries: 12
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: rag_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: maquinaria_rag
+      POSTGRES_USER: rag_user
+      POSTGRES_PASSWORD: rag_pass_2026
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db/init:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+
+  rag-agent:
+    build: .
+    container_name: rentek_rag_agent
+    ports:
+      - "8000:8000"
+    environment:
+      OLLAMA_BASE_URL: http://ollama:11434
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-rag-agent}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-nomic-embed-text}
+      NUM_CTX: ${NUM_CTX:-8192}
+      NUM_PREDICT: ${NUM_PREDICT:-768}
+      KEEP_ALIVE: ${KEEP_ALIVE:-30m}
+      COMPACT_THRESHOLD_TOKENS: ${COMPACT_THRESHOLD_TOKENS:-3000}
+      TOOL_RESULT_MAX_CHARS: ${TOOL_RESULT_MAX_CHARS:-1800}
+      MAX_TOOL_ROUNDS: ${MAX_TOOL_ROUNDS:-4}
+      DB_HOST: postgres
+      DB_PORT: "5432"
+      DB_NAME: maquinaria_rag
+      DB_USER: rag_user
+      DB_PASSWORD: rag_pass_2026
+      AUTH_SECRET_KEY: ${AUTH_SECRET_KEY:-rentek-secret-key-change-in-production-2026}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:-}
+      GOOGLE_REDIRECT_URI: ${GOOGLE_REDIRECT_URI:-http://localhost:8000/auth/google/callback}
+      FRONTEND_URL: ${FRONTEND_URL:-http://localhost:5173}
+    depends_on:
+      ollama:
+        condition: service_started
+      postgres:
+        condition: service_started
+      ollama-init:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+  ollama-init:
+    image: ollama/ollama:latest
+    container_name: rentek_ollama_init
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    volumes:
+      - ./Modelfile:/models/Modelfile:ro
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - ollama pull qwen2.5:7b && ollama create rag-agent -f /models/Modelfile
+    restart: "no"
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: ngrok_rentek
+    command: http rag-agent:8000 --url=washroom-raffle-unharmed.ngrok-free.dev
+    volumes:
+      - /home/damaya/.config/ngrok/ngrok.yml:/var/lib/ngrok/ngrok.yml:ro
+    depends_on:
+      - rag-agent
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
+  postgres_data:

@@ -1,0 +1,221 @@
+<script>
+  import { createEventDispatcher } from 'svelte'
+  import LucideIcons from './LucideIcons.svelte'
+
+  export let user = null
+  export let cartItemsCount = 0
+  export let activeTab = 'catalog' // 'catalog' | 'projects' | 'orders'
+  export let isChatOpen = false
+
+  const dispatch = createEventDispatcher()
+
+  let userMenuOpen = false
+
+  function toggleCart() {
+    dispatch('toggleCart')
+  }
+
+  function toggleChat() {
+    dispatch('toggleChat')
+  }
+
+  function setTab(tab) {
+    activeTab = tab
+    dispatch('navigate', tab)
+  }
+
+  function handleLogout() {
+    dispatch('logout')
+  }
+</script>
+
+<header class="sticky top-0 z-40 bg-surface/90 backdrop-blur-md border-b border-border shadow-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      
+      <!-- Brand Logo -->
+      <div class="flex items-center gap-2.5 cursor-pointer" on:click={() => setTab('catalog')}>
+        <div class="p-1.5 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center shrink-0">
+          <img src="/rentek-white.png" alt="Rentek Logo" class="w-7 h-7 object-contain [filter:brightness(0)_saturate(100%)_invert(73%)_sepia(85%)_saturate(1200%)_hue-rotate(355deg)] transform hover:scale-105 transition-transform" />
+        </div>
+        <div>
+          <span class="font-black text-xl tracking-tight text-amber-500">
+            RENTEK
+          </span>
+          <span class="hidden sm:inline-block ml-2 text-xs font-semibold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">
+            E-Commerce
+          </span>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="hidden md:flex items-center space-x-1">
+        <button
+          class="px-4 py-2 rounded-lg text-sm font-medium transition-all flex items-center gap-2 {activeTab === 'catalog' ? 'bg-amber-500/15 text-amber-400 border border-amber-500/30' : 'text-text-muted hover:text-text hover:bg-surface-hover'}"
+          on:click={() => setTab('catalog')}
+        >
+          <LucideIcons icon="grid" class="w-4 h-4" />
+          Catálogo
+        </button>
+        <button
+          class="px-4 py-2 rounded-lg text-sm font-medium transition-all flex items-center gap-2 {activeTab === 'projects' ? 'bg-amber-500/15 text-amber-400 border border-amber-500/30' : 'text-text-muted hover:text-text hover:bg-surface-hover'}"
+          on:click={() => setTab('projects')}
+        >
+          <LucideIcons icon="hard-hat" class="w-4 h-4" />
+          Proyectos
+        </button>
+        <button
+          class="px-4 py-2 rounded-lg text-sm font-medium transition-all flex items-center gap-2 {activeTab === 'orders' ? 'bg-amber-500/15 text-amber-400 border border-amber-500/30' : 'text-text-muted hover:text-text hover:bg-surface-hover'}"
+          on:click={() => setTab('orders')}
+        >
+          <LucideIcons icon="file-text" class="w-4 h-4" />
+          Cotizaciones
+        </button>
+        {#if user?.role === 'admin'}
+          <button
+            class="px-4 py-2 rounded-lg text-sm font-medium transition-all flex items-center gap-2 {activeTab === 'admin' ? 'bg-amber-500/15 text-amber-400 border border-amber-500/30' : 'text-text-muted hover:text-text hover:bg-surface-hover'}"
+            on:click={() => setTab('admin')}
+          >
+            <LucideIcons icon="lock" class="w-4 h-4" />
+            Administración
+          </button>
+        {/if}
+      </nav>
+
+      <!-- Right Actions: Cart, AI Chat, User -->
+      <div class="flex items-center gap-3">
+        
+        <!-- AI Advisor Toggle Button -->
+        <button
+          on:click={toggleChat}
+          class="relative flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 rounded-full text-xs font-bold transition-all shadow-md border bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 text-white border-indigo-400/50 hover:shadow-indigo-500/30"
+          title="Consultar al Asesor IA con RAG"
+        >
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-200 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+          </span>
+          <LucideIcons icon="sparkles" class="w-3.5 h-3.5 text-amber-300" />
+          <span class="font-extrabold text-xs">Asesor IA</span>
+        </button>
+
+        <!-- Shopping Cart Button -->
+        <button
+          on:click={toggleCart}
+          class="relative p-2 rounded-xl text-text-muted hover:text-amber-400 hover:bg-surface-hover transition-all flex items-center justify-center border border-border"
+          aria-label="Carrito de renta"
+        >
+          <LucideIcons icon="shopping-cart" class="w-5 h-5" />
+          {#if cartItemsCount > 0}
+            <span class="absolute -top-1.5 -right-1.5 flex items-center justify-center w-5 h-5 rounded-full text-xs font-bold bg-amber-500 text-slate-950 shadow-md animate-bounce">
+              {cartItemsCount}
+            </span>
+          {/if}
+        </button>
+
+        <!-- User Menu -->
+        <div class="relative">
+          <button
+            on:click={() => userMenuOpen = !userMenuOpen}
+            class="flex items-center gap-2 p-1.5 rounded-xl hover:bg-surface-hover border border-border/50 text-left transition-colors"
+          >
+            {#if user?.picture || user?.avatar_url || user?.photo}
+              <img
+                src={user.picture || user.avatar_url || user.photo}
+                alt={user?.name || 'Perfil'}
+                class="w-7 h-7 rounded-full object-cover border border-amber-400/50 shadow-sm"
+              />
+            {/if}
+            <span class="hidden sm:inline text-xs font-bold text-text max-w-[140px] truncate">
+              {user?.name || user?.email || 'Mi Cuenta'}
+            </span>
+            <LucideIcons icon="chevron-down" class="w-3.5 h-3.5 text-text-faint" />
+          </button>
+
+          {#if userMenuOpen}
+            <!-- Dropdown backdrop -->
+            <div class="fixed inset-0 z-10" on:click={() => userMenuOpen = false}></div>
+            
+            <div class="absolute right-0 mt-2 w-48 rounded-xl bg-surface border border-border shadow-2xl py-2 z-20">
+              <div class="px-4 py-2 border-b border-border/60">
+                <p class="text-xs font-medium text-text truncate">{user?.name || 'Cliente Rentek'}</p>
+                <p class="text-[10px] text-text-muted truncate">{user?.email || 'cliente@rentek.com'}</p>
+              </div>
+              <button
+                on:click={() => { userMenuOpen = false; setTab('orders'); }}
+                class="w-full text-left px-4 py-2 text-xs text-text-muted hover:text-text hover:bg-surface-hover flex items-center gap-2"
+              >
+                <LucideIcons icon="file-text" class="w-3.5 h-3.5" />
+                Mis Cotizaciones
+              </button>
+              {#if user?.role === 'admin'}
+                <button
+                  on:click={() => { userMenuOpen = false; setTab('admin'); }}
+                  class="w-full text-left px-4 py-2 text-xs text-amber-400 hover:bg-amber-500/10 flex items-center gap-2"
+                >
+                  <LucideIcons icon="lock" class="w-3.5 h-3.5" />
+                  Administración
+                </button>
+              {/if}
+              <button
+                on:click={handleLogout}
+                class="w-full text-left px-4 py-2 text-xs text-rose-400 hover:bg-rose-500/10 flex items-center gap-2"
+              >
+                <LucideIcons icon="log-out" class="w-3.5 h-3.5" />
+                Cerrar Sesión
+              </button>
+            </div>
+          {/if}
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Bottom Navigation Bar -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-surface/95 backdrop-blur-lg border-t border-border flex items-center justify-around py-2 px-1 shadow-2xl">
+  <button
+    on:click={() => setTab('catalog')}
+    class="flex flex-col items-center gap-1 px-3 py-1 rounded-xl text-xs font-semibold transition-all {activeTab === 'catalog' && !isChatOpen ? 'text-amber-400 font-bold' : 'text-text-muted'}"
+  >
+    <LucideIcons icon="grid" class="w-5 h-5" />
+    <span class="text-[10px]">Catálogo</span>
+  </button>
+
+  <button
+    on:click={() => setTab('projects')}
+    class="flex flex-col items-center gap-1 px-3 py-1 rounded-xl text-xs font-semibold transition-all {activeTab === 'projects' && !isChatOpen ? 'text-amber-400 font-bold' : 'text-text-muted'}"
+  >
+    <LucideIcons icon="hard-hat" class="w-5 h-5" />
+    <span class="text-[10px]">Proyectos</span>
+  </button>
+
+  <button
+    on:click={() => setTab('orders')}
+    class="flex flex-col items-center gap-1 px-3 py-1 rounded-xl text-xs font-semibold transition-all {activeTab === 'orders' && !isChatOpen ? 'text-amber-400 font-bold' : 'text-text-muted'}"
+  >
+    <LucideIcons icon="file-text" class="w-5 h-5" />
+    <span class="text-[10px]">Cotizaciones</span>
+  </button>
+
+  <button
+    on:click={toggleChat}
+    class="flex flex-col items-center gap-1 px-3 py-1 rounded-xl text-xs font-bold transition-all {isChatOpen ? 'text-white bg-indigo-600 shadow-md shadow-indigo-600/30' : 'text-indigo-300 hover:text-white'}"
+  >
+    <LucideIcons icon="sparkles" class="w-5 h-5 text-amber-300" />
+    <span class="text-[10px] font-bold">Asesor IA</span>
+  </button>
+
+  {#if user?.role === 'admin'}
+    <button
+      on:click={() => setTab('admin')}
+      class="flex flex-col items-center gap-1 px-3 py-1 rounded-xl text-xs font-semibold transition-all {activeTab === 'admin' && !isChatOpen ? 'text-amber-400 font-bold' : 'text-text-muted'}"
+    >
+      <LucideIcons icon="lock" class="w-5 h-5" />
+      <span class="text-[10px]">Admin</span>
+    </button>
+  {/if}
+</nav>
+

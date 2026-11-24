@@ -1,0 +1,29 @@
+# Secretos y entorno
+.env
+.env.*
+!.env.example
+
+# Node / frontend / API
+node_modules/
+dist/
+.vite/
+coverage/
+*.tsbuildinfo
+test-results/
+playwright-report/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+chroma_db/
+.rag_latencies.json
+
+# Herramientas / sistema
+.DS_Store
+Thumbs.db
+*.log
+.opencode/
+.antigravitycli/

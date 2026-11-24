@@ -1,0 +1,1286 @@
+---
+title: Catálogo de Maquinarias - Base de Conocimiento RAG
+version: 2.0
+propósito: Base de conocimiento para IA de renta de maquinaria industrial y de construcción.
+  Contiene fichas detalladas con especificaciones, casos de uso, preguntas frecuentes
+  y variantes de lenguaje natural para mejorar la comprensión semántica del modelo.
+---
+
+# Movimiento de Tierra
+
+## Excavadora Hidráulica de Orugas
+
+### Sinónimos y variantes de lenguaje
+_excavadora, retroexcavadora de orugas, excavadora de cadenas, máquina amarilla,
+pala mecánica, necesito la máquina amarilla, quiero una de orugas que cave,
+máquina de excavar_
+
+### Información general
+- **Nombre común:** Excavadora
+- **Marcas:** Caterpillar (CAT), Komatsu, Volvo, Hitachi, John Deere, Hyundai, CASE, Kobelco
+- **Modelos típicos:** CAT 320, CAT 336, Komatsu PC200, Komatsu PC360, Volvo EC220, Hitachi ZX200
+- **Precio de renta:** $3,500 – $7,000 MXN/día
+
+### Especificaciones técnicas (modelo mediano)
+- Peso operativo: 20,000 – 36,000 kg
+- Potencia del motor: 130 – 270 HP
+- Capacidad del cucharón: 0.9 – 1.8 m³
+- Profundidad máxima de excavación: 6.5 – 8.5 m
+- Alcance máximo horizontal: 9 – 11 m
+- Altura máxima de descarga: 6.5 – 8 m
+- Combustible: Diésel
+- Sistema de traslado: Orugas de acero o goma
+- Velocidad de traslado: 4.5 – 6 km/h
+
+### Casos de uso
+1. Excavación de cimientos para edificios residenciales y comerciales.
+2. Apertura de zanjas para instalación de tuberías de agua, drenaje, gas y cableado subterráneo.
+3. Demolición de estructuras de concreto ligeras con accesorio de martillo hidráulico.
+4. Movimiento y carga de tierra, grava y escombro en camiones de volteo.
+5. Excavación de sótanos y estacionamientos subterráneos.
+6. Limpieza y desazolve de canales de riego y drenaje pluvial.
+7. Nivelación de terrenos en obras viales.
+8. Extracción de árboles y remoción de tocones en desmontes.
+9. Construcción de bordos y terraplenes en presas y represas pequeñas.
+10. Perforación con accesorio de barrena para postes y pilotes.
+
+### Preguntas frecuentes
+- **¿Cuánto tarda en excavar un cimiento de 10x10 m?** En suelo blando, una excavadora mediana puede hacerlo en 4-6 horas.
+- **¿Necesito operador?** La renta puede incluir operador certificado o sin operador. Se recomienda operador calificado.
+- **¿Puede trabajar en espacios reducidos?** Para espacios reducidos se recomienda una miniexcavadora.
+- **¿Puede trabajar en lluvia?** Sí, aunque en suelos arcillosos la lluvia dificulta la operación.
+
+### Accesorios disponibles
+- Cucharón estándar de excavación
+- Cucharón de limpieza (sin dientes)
+- Martillo hidráulico / rompedor
+- Pinza demoledora
+- Barrena / auger
+- Ripper (escarificador)
+- Pulpo / imán para chatarra
+
+---
+
+## Miniexcavadora
+
+### Sinónimos y variantes de lenguaje
+_miniexcavadora, mini excavadora, excavadora compacta, minicargador excavador,
+baby excavadora, máquina chica para excavar_
+
+### Información general
+- **Nombre común:** Miniexcavadora
+- **Marcas:** Kubota, Bobcat, Caterpillar, Komatsu, Yanmar, Doosan, CASE
+- **Modelos típicos:** Kubota U35, Bobcat E35, CAT 305.5, Komatsu PC55
+- **Precio de renta:** $1,500 – $3,000 MXN/día
+
+### Especificaciones técnicas
+- Peso operativo: 1,500 – 6,000 kg
+- Potencia del motor: 15 – 55 HP
+- Capacidad del cucharón: 0.04 – 0.2 m³
+- Profundidad máxima de excavación: 2.5 – 4.0 m
+- Ancho mínimo de trabajo: 0.99 – 1.8 m
+- Combustible: Diésel
+- Sistema de traslado: Orugas de goma
+
+### Casos de uso
+1. Excavación en patios traseros, jardines y espacios donde no entra una excavadora convencional.
+2. Reparación de fugas en tuberías domiciliarias en accesos estrechos.
+3. Instalación de postes de luz, barda perimetral y cercos.
+4. Trabajo en interiores de naves industriales o bodegas.
+5. Jardinería y paisajismo a gran escala (trasplante de árboles).
+6. Excavación en zonas arqueológicas o trabajos de precisión.
+7. Demolición controlada de losas delgadas y muros.
+8. Limpieza de cunetas y canales en zonas urbanas de difícil acceso.
+9. Excavación de fosas sépticas en propiedades con acceso restringido.
+10. Trabajos de plomería en espacios interiores de edificios.
+
+---
+
+## Bulldozer / Topadora
+
+### Sinónimos y variantes de lenguaje
+_bulldozer, topadora, buldócer, tractor de orugas, dozer, empujadora,
+necesito limpiar el terreno, quiero emparejar un terreno grande, necesito una topadora_
+
+### Información general
+- **Nombre común:** Bulldozer, topadora
+- **Marcas:** Caterpillar, Komatsu, John Deere, Liebherr, Dressta
+- **Modelos típicos:** CAT D6, CAT D8, Komatsu D65, Komatsu D155, John Deere 850
+- **Precio de renta:** $4,000 – $9,000 MXN/día
+
+### Especificaciones técnicas (modelo mediano)
+- Peso operativo: 14,000 – 38,000 kg
+- Potencia del motor: 140 – 355 HP
+- Capacidad de la hoja (blade): 3.5 – 9.5 m³
+- Velocidad máxima de avance: 10 – 12 km/h
+- Combustible: Diésel
+- Sistema de traslado: Orugas de acero
+
+### Casos de uso
+1. Desmonte y limpieza de terrenos con vegetación densa.
+2. Nivelación y preparación de plataformas para cimentaciones o carreteras.
+3. Empuje de grandes volúmenes de tierra, grava o roca suelta.
+4. Construcción y mantenimiento de caminos de terracería.
+5. Relleno compactado de zanjas y excavaciones.
+6. Operaciones mineras a cielo abierto.
+7. Rehabilitación de bancos de material.
+8. Construcción de bordos de contención en zonas de inundación.
+9. Creación de accesos en obras de gran escala.
+10. Limpieza de escombros tras desastres naturales.
+
+---
+
+## Motoniveladora (Grader)
+
+### Sinónimos y variantes de lenguaje
+_motoniveladora, niveladora, grader, conformadora, máquina de nivelar,
+quiero nivelar el camino, necesito perfilar la terracería, grader para el camino_
+
+### Información general
+- **Nombre común:** Motoniveladora, grader
+- **Marcas:** Caterpillar, Komatsu, John Deere, CASE, Volvo, Champion
+- **Modelos típicos:** CAT 120, CAT 140, Komatsu GD655, John Deere 772
+- **Precio de renta:** $4,500 – $8,500 MXN/día
+
+### Especificaciones técnicas
+- Peso operativo: 11,000 – 20,000 kg
+- Potencia del motor: 125 – 250 HP
+- Longitud de la hoja: 3.7 – 4.9 m
+- Velocidad máxima: 40 – 50 km/h
+- Combustible: Diésel
+- Número de ejes: 3
+
+### Casos de uso
+1. Conformación y nivelación fina de subrasantes en carreteras.
+2. Apertura y mantenimiento de caminos de terracería.
+3. Extendido y nivelación de material granular en vialidades.
+4. Creación de pendientes y bombeos para drenaje.
+5. Perfilado de cunetas y canales de desagüe.
+6. Mantenimiento de caminos no pavimentados.
+7. Preparación de bases para aeropistas.
+8. Limpieza de nieve en zonas de alta montaña.
+9. Nivelación de patios industriales.
+10. Escarificado superficial de pavimentos deteriorados.
+
+---
+
+## Compactadora de Suelos / Vibrocompactador
+
+### Sinónimos y variantes de lenguaje
+_compactadora, rodillo vibratorio, vibrocompactador, rodo compactador,
+rodillo liso, rodillo pata de cabra, rodillo de asfalto, necesito compactar
+el relleno, quiero un rodillo, necesito un rodo para asfalto_
+
+### Información general
+- **Nombre común:** Compactadora, rodillo vibratorio
+- **Marcas:** Caterpillar, Dynapac, Bomag, Hamm, Sakai, Volvo
+- **Modelos típicos:** CAT CS56, Dynapac CA250, Bomag BW213, Hamm H13i
+- **Precio de renta:** $2,500 – $5,500 MXN/día
+
+### Especificaciones técnicas
+- Peso operativo: 8,000 – 14,000 kg
+- Ancho del tambor: 1.6 – 2.1 m
+- Amplitud de vibración: 0.4 – 1.8 mm
+- Frecuencia de vibración: 25 – 35 Hz
+- Potencia del motor: 90 – 130 HP
+- Combustible: Diésel
+- Velocidad de trabajo: 0 – 12 km/h
+
+### Tipos de compactadora
+- **Rodillo liso vibratorio:** Para asfalto y suelos granulares.
+- **Rodillo pata de cabra (tamping):** Para suelos cohesivos y arcillosos.
+- **Rodillo neumático:** Para compactación de capas asfálticas finas.
+- **Placa vibradora (pequeña):** Para compactación manual en zanjas y espacios reducidos.
+
+### Casos de uso
+1. Compactación de subrasante y bases granulares en carreteras.
+2. Compactación de rellenos en zanjas de tuberías y cimientos.
+3. Compactación de capas de asfalto en pavimentación.
+4. Preparación de bases para losas de concreto industrial.
+5. Compactación de rellenos en terraplenes y bordos hidráulicos.
+6. Mantenimiento de pistas de aviación.
+7. Compactación en rellenos sanitarios.
+8. Construcción de presas de tierra.
+9. Recompactación de sub-base en rehabilitación de pavimentos.
+10. Compactación de patios y accesos en fraccionamientos.
+
+---
+
+# Carga y Acarreo
+
+## Cargador Frontal (Payloader)
+
+### Sinónimos y variantes de lenguaje
+_cargador frontal, payloader, pala cargadora, cargador de ruedas, loader,
+cargador articulado, quiero una máquina que cargue grava, necesito cargar
+material al camión_
+
+### Información general
+- **Nombre común:** Cargador frontal, payloader
+- **Marcas:** Caterpillar, Komatsu, Volvo, John Deere, CASE, Liebherr, Hitachi
+- **Modelos típicos:** CAT 950, CAT 966, Komatsu WA380, Volvo L120, John Deere 744
+- **Precio de renta:** $3,000 – $6,500 MXN/día
+
+### Especificaciones técnicas (modelo mediano)
+- Peso operativo: 13,000 – 24,000 kg
+- Potencia del motor: 180 – 290 HP
+- Capacidad del cucharón: 2.5 – 4.5 m³
+- Carga de vuelco estático: 15,000 – 26,000 kg
+- Altura máxima de descarga: 2.8 – 3.5 m
+- Combustible: Diésel
+- Sistema de traslado: Ruedas neumáticas
+
+### Casos de uso
+1. Carga de material a camiones de volteo en bancos de material.
+2. Movimiento y apilamiento de materiales a granel en patios.
+3. Demolición de estructuras ligeras empujando con el cucharón.
+4. Limpieza de escombros en obras de construcción.
+5. Carga de caña de azúcar y materiales agroindustriales.
+6. Manejo de minerales en minas y plantas procesadoras.
+7. Esparcido de material granular en vialidades.
+8. Remoción de nieve en aeropuertos.
+9. Carga de granos en silos agroindustriales.
+10. Apoyo en operaciones de reciclaje.
+
+---
+
+## Retroexcavadora (Backhoe)
+
+### Sinónimos y variantes de lenguaje
+_retroexcavadora, backhoe, máquina mixta, pala retroexcavadora, JCB,
+necesito una JCB, quiero una máquina mixta, rentar un backhoe_
+
+### Información general
+- **Nombre común:** Retroexcavadora, backhoe
+- **Marcas:** JCB, Caterpillar, CASE, John Deere, Komatsu, New Holland
+- **Modelos típicos:** JCB 3CX, JCB 4CX, CAT 420F, CASE 580N, John Deere 310SL
+- **Precio de renta:** $2,200 – $4,500 MXN/día
+- **Ventaja clave:** Versátil porque tiene cargador frontal y excavador posterior en una sola máquina.
+
+### Especificaciones técnicas
+- Peso operativo: 7,500 – 10,000 kg
+- Potencia del motor: 95 – 115 HP
+- Capacidad cucharón cargador frontal: 1.0 – 1.3 m³
+- Capacidad cucharón excavador posterior: 0.08 – 0.29 m³
+- Profundidad máxima de excavación: 4.3 – 5.8 m
+- Combustible: Diésel
+- Sistema de traslado: Ruedas neumáticas
+
+### Casos de uso
+1. Excavación de zanjas para tuberías en zonas urbanas.
+2. Carga y acarreo de material en distancias cortas.
+3. Demolición de pisos de concreto, banquetas y guarniciones.
+4. Colocación de tubería de drenaje y alcantarillado.
+5. Excavación de fosas sépticas y pozos de absorción.
+6. Trabajos municipales: reparación de calles, bacheo profundo.
+7. Apertura de accesos en fraccionamientos residenciales.
+8. Trabajos agrícolas: apertura de canales de riego.
+9. Extracción de árboles en desmontes medianos.
+10. Apoyo en obras de drenaje pluvial urbano.
+
+---
+
+## Camión de Volteo / Camión Articulado
+
+### Sinónimos y variantes de lenguaje
+_camión de volteo, volteo, camión articulado, dumper, motovolquete,
+camión dúmper, ADT, volquete, quiero un camión para sacar tierra,
+dónde rentan volquetes_
+
+### Información general
+- **Nombre común:** Camión de volteo, camión articulado
+- **Marcas:** Caterpillar, Volvo, Bell, Komatsu, Doosan
+- **Modelos típicos:** CAT 745, Volvo A40G, Bell B30E, Komatsu HM400
+- **Precio de renta:** $4,000 – $9,000 MXN/día
+
+### Especificaciones técnicas (camión articulado mediano)
+- Peso bruto vehicular: 38,000 – 60,000 kg
+- Capacidad de carga: 25,000 – 40,000 kg
+- Capacidad volumétrica: 18 – 28 m³
+- Potencia del motor: 380 – 520 HP
+- Velocidad máxima cargado: 40 – 50 km/h
+- Combustible: Diésel
+- Tracción: 6x6
+
+### Casos de uso
+1. Transporte de material de excavación en obra minera o vial.
+2. Acarreo de material de préstamo para terraplenes y carreteras.
+3. Transporte de grava, arena y tepetate en bancos de material.
+4. Apoyo en movimiento masivo de tierra en infraestructura.
+5. Transporte de mineral en minas de tajo abierto.
+6. Obras hidráulicas: material para presas de tierra.
+7. Acarreo de material de corte a terraplén en parques industriales.
+
+---
+
+## Minicargador (Skid Steer)
+
+### Sinónimos y variantes de lenguaje
+_minicargador, skid steer, bobcat, cargador de patas, miniloader,
+cargador de dirección deslizante, necesito un bobcat, quiero una máquina
+chica para mover tierra, necesito algo compacto para adentro de la bodega_
+
+### Información general
+- **Nombre común:** Minicargador, skid steer
+- **Marcas:** Bobcat, Caterpillar, CASE, John Deere, Kubota, New Holland
+- **Modelos típicos:** Bobcat S650, CAT 262D, CASE SR250, John Deere 332G
+- **Precio de renta:** $1,400 – $2,800 MXN/día
+
+### Especificaciones técnicas
+- Peso operativo: 2,500 – 4,500 kg
+- Potencia del motor: 50 – 90 HP
+- Carga operativa nominal: 900 – 1,600 kg
+- Altura de descarga: 2.4 – 3.1 m
+- Ancho de la máquina: 1.5 – 1.9 m
+- Combustible: Diésel
+
+### Casos de uso
+1. Manejo de materiales en espacios confinados.
+2. Demolición interior de edificios (martillo o cizalla).
+3. Limpieza de sitios de construcción.
+4. Trabajo en invernaderos, bodegas, naves industriales.
+5. Nivelación en áreas pequeñas.
+6. Manejo de pacas de forraje y materiales agrícolas.
+7. Pavimentación de áreas pequeñas (planeador de asfalto).
+8. Excavación de zanjas (accesorio trencher).
+9. Barrido de patios (accesorio barredora).
+10. Demolición de pisos cerámicos o concreto ligero.
+
+---
+
+# Elevación y Grúas
+
+## Grúa Telescópica sobre Camión (Grúa Móvil)
+
+### Sinónimos y variantes de lenguaje
+_grúa telescópica, grúa móvil, grúa sobre camión, grúa hidráulica telescópica,
+truck crane, auto grúa, necesito levantar algo muy pesado, tengo que izar
+una estructura, quiero una grúa para montar equipo_
+
+### Información general
+- **Nombre común:** Grúa telescópica, grúa móvil
+- **Marcas:** Liebherr, Tadano, Manitowoc, Grove, Terex, XCMG
+- **Modelos típicos:** Liebherr LTM 1050, Tadano ATF 50G, Grove GMK3060
+- **Precio de renta:** $12,000 – $45,000 MXN/día (más movilización)
+
+### Especificaciones técnicas (50 toneladas)
+- Capacidad máxima de carga: 50 – 500 toneladas (según modelo)
+- Longitud máxima de pluma: 30 – 60 m
+- Radio de trabajo máximo: 28 – 48 m
+- Altura máxima de elevación: 40 – 70 m
+- Peso total: 36,000 – 80,000 kg
+- Combustible: Diésel
+- Ejes: 4 – 7
+
+### Casos de uso
+1. Izaje y colocación de estructuras metálicas.
+2. Instalación de equipos pesados en plantas industriales.
+3. Montaje de puentes peatonales y vehiculares.
+4. Colocación de tanques de almacenamiento.
+5. Instalación de aerogeneradores.
+6. Montaje de antenas y telecomunicaciones.
+7. Izaje de paneles prefabricados de concreto.
+8. Rescate de vehículos pesados en accidentes.
+9. Mantenimiento de torres de alta tensión.
+10. Instalación de equipos en azoteas de edificios.
+
+---
+
+## Plataforma Elevadora de Tijera (Scissor Lift)
+
+### Sinónimos y variantes de lenguaje
+_plataforma de tijera, elevador de tijera, scissor lift, andamio eléctrico,
+plataforma vertical, elevador de trabajo en altura, necesito subir a trabajar
+arriba, tengo que llegar al techo, necesito un andamio elevador_
+
+### Información general
+- **Nombre común:** Plataforma de tijera, scissor lift
+- **Marcas:** JLG, Genie, Haulotte, Skyjack, Manitou, Snorkel
+- **Modelos típicos:** JLG 2630ES, Genie GS-2632, Haulotte Compact 12, Skyjack SJ3226
+- **Precio de renta:** $800 – $2,500 MXN/día
+
+### Especificaciones técnicas
+- Altura máxima de trabajo: 6 – 16 m
+- Capacidad de carga: 230 – 680 kg
+- Dimensiones de plataforma: 0.7 x 1.5 m hasta 1.8 x 3.7 m
+- Accionamiento: Eléctrico (interior) o diésel/dual fuel (exterior)
+- Ancho de máquina: 0.76 – 1.8 m
+- Velocidad de elevación: 20 – 35 segundos
+
+### Casos de uso
+1. Instalación y mantenimiento de sistemas eléctricos en techos.
+2. Pintura y acabados en paredes de altura.
+3. Mantenimiento de luminarias y sistemas contra incendio.
+4. Instalación de ductos de aire acondicionado.
+5. Trabajos de albañilería en muros exteriores.
+6. Instalación de señalética en interiores comerciales.
+7. Mantenimiento de estanterías en bodegas.
+8. Jardinería y poda en altura.
+9. Instalación de sistemas de videovigilancia.
+10. Montaje de stands en ferias y eventos.
+
+---
+
+## Plataforma Articulada (Boom Lift)
+
+### Sinónimos y variantes de lenguaje
+_boom lift, brazo articulado, plataforma articulada, plataforma de brazo,
+hombre araña, cherry picker, manlift, quiero un cherry picker_
+
+### Información general
+- **Nombre común:** Boom lift, brazo articulado
+- **Marcas:** JLG, Genie, Haulotte, Manitou, Niftylift
+- **Modelos típicos:** JLG 450AJ, Genie Z-45/25J, Haulotte HA16PX
+- **Precio de renta:** $2,000 – $6,000 MXN/día
+
+### Especificaciones técnicas
+- Altura máxima de trabajo: 12 – 45 m
+- Alcance horizontal máximo: 7 – 20 m
+- Capacidad de carga: 200 – 350 kg
+- Accionamiento: Diésel, eléctrico o dual fuel
+- Rotación de pluma: 360°
+- Personas en plataforma: 1 – 2
+
+### Casos de uso
+1. Mantenimiento de fachadas de edificios de altura.
+2. Inspección y reparación de estructuras de acero.
+3. Poda de árboles de gran tamaño.
+4. Instalación de lonas publicitarias en altura.
+5. Mantenimiento de líneas eléctricas (versión aislada).
+6. Trabajos en techos inclinados y cúpulas.
+7. Producción audiovisual: cámaras y luces en altura.
+8. Inspección de chimeneas y silos.
+9. Mantenimiento de sistemas de ventilación en azoteas.
+10. Montaje de estructuras temporales en eventos.
+
+---
+
+## Montacargas Telescópico (Telehandler)
+
+### Sinónimos y variantes de lenguaje
+_telehandler, montacargas telescópico, manipulador telescópico,
+manipulador de materiales, reach forklift, mástil telescópico_
+
+### Información general
+- **Nombre común:** Telehandler, montacargas telescópico
+- **Marcas:** JCB, Manitou, Merlo, Caterpillar, Genie, Haulotte
+- **Modelos típicos:** JCB 535-125, Manitou MT 1440, Merlo P40.17
+- **Precio de renta:** $2,500 – $5,500 MXN/día
+
+### Especificaciones técnicas
+- Capacidad máxima de carga: 2,500 – 4,500 kg
+- Altura máxima de elevación: 7 – 17 m
+- Alcance máximo horizontal: 6 – 14 m
+- Potencia del motor: 70 – 140 HP
+- Combustible: Diésel
+- Tracción: 4x4 con dirección en las 4 ruedas
+
+### Casos de uso
+1. Colocación de materiales en niveles superiores de edificios.
+2. Manejo de materiales en terrenos irregulares.
+3. Carga y descarga de camiones en patios con espacio limitado.
+4. Instalación de prefabricados de concreto.
+5. Manejo de pacas y silos agroindustriales.
+6. Montaje de cobertizos metálicos.
+7. Mantenimiento en altura con cesta de trabajo (accesorio).
+8. Apilamiento en almacenes al aire libre.
+9. Obras en zonas rurales sin pavimento.
+10. Plataforma para cámaras en exteriores (cine).
+
+---
+
+# Pavimentación y Asfalto
+
+## Pavimentadora de Asfalto (Finisher)
+
+### Información general
+- **Nombre común:** Pavimentadora, extendedora de asfalto, finisher
+- **Marcas:** Caterpillar, Bomag, Dynapac, Vögele (Wirtgen Group), CASE
+- **Modelos típicos:** CAT AP600F, Vögele Super 1800-3, Bomag BF600
+- **Precio de renta:** $7,000 – $15,000 MXN/día
+
+### Especificaciones técnicas
+- Ancho de pavimentación: 2.5 – 9.0 m (con extensiones)
+- Velocidad de pavimentación: 2 – 20 m/min
+- Capacidad de tolva: 8 – 15 toneladas
+- Potencia del motor: 120 – 190 HP
+- Espesor de capa: 10 – 300 mm
+- Combustible: Diésel
+
+### Casos de uso
+1. Pavimentación de calles y carreteras con mezcla asfáltica en caliente.
+2. Construcción de estacionamientos asfaltados.
+3. Rehabilitación de pavimentos deteriorados.
+4. Pavimentación de pistas de aviación ligeras.
+5. Construcción de ciclovías.
+6. Pavimentación en fraccionamientos.
+
+---
+
+## Fresadora de Asfalto (Cold Planer)
+
+### Sinónimos y variantes de lenguaje
+_fresadora de asfalto, cold planer, milling machine, fresadora en frío,
+recortadora de pavimento, máquina de fresar_
+
+### Información general
+- **Nombre común:** Fresadora de asfalto, cold planer
+- **Marcas:** Wirtgen, Caterpillar, Bomag, Dynapac, Roadtec
+- **Modelos típicos:** Wirtgen W200i, CAT PM622, Bomag BM2000
+- **Precio de renta:** $8,000 – $20,000 MXN/día
+
+### Especificaciones técnicas
+- Ancho de fresado: 0.3 – 2.2 m
+- Profundidad máxima de fresado: 30 – 35 cm
+- Potencia del motor: 100 – 750 HP
+- Velocidad de fresado: 0 – 80 m/min
+- Combustible: Diésel
+
+### Casos de uso
+1. Remoción de capas de asfalto deteriorado para repavimentación.
+2. Corrección de niveles en superficies asfaltadas.
+3. Preparación de superficie para nueva carpeta asfáltica.
+4. Bacheo profundo en vialidades urbanas.
+5. Demolición controlada para servicios subterráneos.
+6. Rectificación de pendientes en concreto hidráulico.
+
+---
+
+# Perforación y Cimentación
+
+## Perforadora Rotaria (Drilling Rig)
+
+### Sinónimos y variantes de lenguaje
+_perforadora, taladro de tierra, drilling rig, máquina de perforación rotaria,
+barrena de pozos, perforadora de pilotes, necesito hacer pilotes, quiero
+perforar el terreno profundo, máquina para pozos_
+
+### Información general
+- **Nombre común:** Perforadora, drilling rig
+- **Marcas:** Atlas Copco, Sandvik, Soilmec, Bauer, Liebherr, IMT
+- **Modelos típicos:** Atlas Copco SmartROC, Soilmec SR-75, Bauer BG 28
+- **Precio de renta:** $15,000 – $50,000 MXN/día
+
+### Especificaciones técnicas
+- Diámetro de perforación: 100 mm – 2,500 mm
+- Profundidad máxima: 20 – 100 m (según modelo)
+- Par de torsión máximo: 100 – 500 kNm
+- Potencia del motor: 200 – 600 HP
+- Combustible: Diésel
+- Peso operativo: 40,000 – 130,000 kg
+
+### Casos de uso
+1. Perforación de pilotes de cimentación profunda.
+2. Perforación de pozos de agua potable.
+3. Instalación de micropilotes para refuerzo de cimentaciones.
+4. Pilotes de carga en naves industriales.
+5. Exploración geotécnica: muestras de suelo y roca.
+6. Perforación para energía geotérmica.
+7. Pantallas de pilotes para contención de suelos.
+8. Anclajes para estabilización de taludes.
+9. Instalación de postes de alta tensión.
+
+---
+
+## Martinete / Hinca de Pilotes
+
+### Información general
+- **Nombre común:** Martinete, hincadora de pilotes
+- **Marcas:** Banut, Junttan, APE, Liebherr
+- **Modelos típicos:** Junttan PM26, APE D30-42, Banut 520
+- **Precio de renta:** $18,000 – $60,000 MXN/día
+
+### Especificaciones técnicas
+- Energía de golpe: 50 – 400 kJ
+- Peso del martillo: 3,000 – 15,000 kg
+- Longitud máxima de pilote: 20 – 40 m
+- Capacidad de carga: hasta 500 toneladas
+- Tipo de martillo: Diésel, hidráulico, vibratorio
+
+### Casos de uso
+1. Instalación de pilotes de concreto en puentes.
+2. Tablestacas metálicas para ataguías.
+3. Hinca de pilotes de acero en cimentaciones industriales.
+4. Construcción de muelles y embarcaderos.
+5. Celdas de carga en zonas de suelo blando.
+
+---
+
+# Manejo de Concreto
+
+## Bomba de Concreto Estacionaria
+
+### Sinónimos y variantes de lenguaje
+_bomba de concreto, bomba estacionaria, bomba de mezcla, bombeadora de
+concreto, concrete pump_
+
+### Información general
+- **Nombre común:** Bomba de concreto estacionaria
+- **Marcas:** Putzmeister, Schwing, CIFA, Zoomlion, Alliance
+- **Modelos típicos:** Putzmeister BSA 1407, Schwing SP 500, CIFA CS10
+- **Precio de renta:** $3,500 – $8,000 MXN/día
+
+### Especificaciones técnicas
+- Presión máxima de bombeo: 70 – 200 bar
+- Caudal de bombeo: 20 – 120 m³/h
+- Diámetro de tuberías: 100 – 150 mm
+- Distancia horizontal máxima: 300 – 800 m
+- Altura vertical máxima: 100 – 300 m
+- Potencia del motor: 60 – 200 HP
+- Combustible: Diésel o eléctrico
+
+### Casos de uso
+1. Colado de losas en edificios de varios pisos.
+2. Relleno de muros de concreto en altura.
+3. Colado de pisos industriales con acceso restringido.
+4. Inyección de concreto en túneles.
+5. Colado de elementos estructurales complejos.
+6. Reparación y refuerzo de estructuras.
+7. Proyección de concreto (shotcrete) en taludes.
+
+---
+
+## Camión Revolvedor / Mixer de Concreto
+
+### Sinónimos y variantes de lenguaje
+_revolvedor, mixer, olla de concreto, camión mezclador, truck mixer,
+camión tambor_
+
+### Información general
+- **Nombre común:** Revolvedor, mixer
+- **Marcas:** Oshkosh, McNeilus, Schwing Stetter, CIFA, Liebherr
+- **Modelos típicos:** McNeilus Mixer, Schwing Stetter AM 9
+- **Precio de renta:** $2,500 – $5,000 MXN por viaje o día
+
+### Especificaciones técnicas
+- Capacidad del tambor: 6 – 12 m³
+- Velocidad de mezcla: 6 – 18 rpm
+- Potencia del motor: 300 – 400 HP
+- Combustible: Diésel
+- Peso bruto: 24,000 – 32,000 kg
+
+### Casos de uso
+1. Suministro de concreto premezclado a obras.
+2. Colado de cimentaciones, columnas, vigas y losas.
+3. Abastecimiento para bomba estacionaria o de pluma.
+4. Pavimentación de concreto hidráulico.
+5. Prefabricación de elementos estructurales.
+
+---
+
+# Generación de Energía y Servicios
+
+## Generador Eléctrico Industrial
+
+### Sinónimos y variantes de lenguaje
+_generador, planta de luz, planta eléctrica, generador diésel, grupo electrógeno,
+planta generadora, genset, se me va la luz en la obra, necesito planta de luz,
+me quedé sin electricidad en el evento, necesito corriente en campo_
+
+### Información general
+- **Nombre común:** Generador, planta de luz
+- **Marcas:** Caterpillar, Cummins, Kohler, Perkins, Volvo Penta, Multiquip, Generac
+- **Modelos típicos:** CAT DE220, Cummins C150D5, Kohler 200REOZJE
+- **Precio de renta:**
+  - 20-50 kVA: $800 – $1,800 MXN/día
+  - 100-250 kVA: $2,000 – $4,500 MXN/día
+  - 500+ kVA: $6,000 – $15,000 MXN/día
+
+### Especificaciones técnicas
+- Potencia prime: 20 – 2,000 kVA
+- Potencia standby: 22 – 2,200 kVA
+- Voltaje: 120/240V monofásico o 480V trifásico
+- Frecuencia: 60 Hz
+- Combustible: Diésel, gas natural o bifuel
+- Ruido: 65 – 85 dB(A) a 7 m
+- Autonomía: 8 – 24 horas
+
+### Casos de uso
+1. Respaldo eléctrico en hospitales, centros de datos.
+2. Energía en obras sin conexión a red eléctrica.
+3. Alimentación de iluminación y herramientas en zonas remotas.
+4. Eventos masivos: conciertos, festivales.
+5. Zonas rurales sin electrificación.
+6. Operaciones mineras en sitios remotos.
+7. Emergencias por desastres naturales.
+8. Industria petrolera y gasera.
+9. Torres de telecomunicaciones.
+10. Plantas de tratamiento de agua portátiles.
+
+---
+
+## Compresor de Aire Industrial Portátil
+
+### Sinónimos y variantes de lenguaje
+_compresor portátil, compresor de aire, compresor remolcable, compresor de
+tornillo, compresor de pistón industrial, air compressor, necesito aire para
+las herramientas, tengo herramientas neumáticas, necesito compresor para
+sandblasting_
+
+### Información general
+- **Nombre común:** Compresor portátil
+- **Marcas:** Atlas Copco, Ingersoll Rand, Doosan Portable Power, Sullair, Kaeser
+- **Modelos típicos:** Atlas Copco XAS 375, Ingersoll Rand P375, Doosan C185
+- **Precio de renta:** $1,200 – $4,500 MXN/día
+
+### Especificaciones técnicas
+- Caudal de aire: 3 – 35 m³/min (185 – 1,600 CFM)
+- Presión de trabajo: 7 – 24 bar
+- Potencia del motor: 30 – 350 HP
+- Combustible: Diésel
+- Salidas: 2 – 4 conexiones de manguera
+
+### Casos de uso
+1. Operación de herramientas neumáticas (demoledores, taladros).
+2. Limpieza de superficies con chorro de aire.
+3. Inflado de neumáticos de maquinaria pesada.
+4. Martillos perforadores en minería.
+5. Sandblasting (chorro de arena).
+6. Pruebas hidrostáticas de tuberías.
+7. Ventilación forzada en túneles.
+8. Pintura por aspersión industrial.
+9. Perforación neumática en canteras.
+10. Limpieza de filtros industriales.
+
+---
+
+# Maquinaria Agrícola
+
+## Tractor Agrícola de Gran Potencia
+
+### Información general
+- **Nombre común:** Tractor agrícola
+- **Marcas:** John Deere, Case IH, New Holland, Massey Ferguson, Fendt, Claas
+- **Modelos típicos:** John Deere 8R 340, Case IH Magnum 380, New Holland T9.615
+- **Precio de renta:** $2,500 – $5,500 MXN/día
+
+### Especificaciones técnicas (alta potencia)
+- Potencia del motor: 200 – 500 HP
+- Par motor máximo: 800 – 2,000 Nm
+- Combustible: Diésel
+- Capacidad del depósito: 500 – 900 L
+- Tracción: 4WD
+- Enganche trasero: Categoría 3 o 4
+- Toma de fuerza (PTO): 540 / 1000 rpm
+
+### Casos de uso
+1. Labranza profunda (barbecho) con arado de discos.
+2. Subsoleo para romper capas duras de suelo.
+3. Rastreo y preparación de camas de siembra.
+4. Siembra de cultivos con sembradora de precisión.
+5. Aplicación de fertilizantes.
+6. Tracción de remolques agrícolas.
+7. Operación de segadoras forrajeras.
+8. Carga con pala frontal.
+9. Corte de maleza en terrenos abandonados.
+10. Instalación de sistemas de riego.
+
+---
+
+## Cosechadora Combinada
+
+### Información general
+- **Nombre común:** Cosechadora, combinada, trilladora
+- **Marcas:** John Deere, Case IH, New Holland, Claas, Fendt
+- **Modelos típicos:** John Deere S780, Case IH 9250, Claas Lexion 8900
+- **Precio de renta:** $8,000 – $20,000 MXN/día (por hectárea también común)
+
+### Especificaciones técnicas
+- Potencia del motor: 300 – 790 HP
+- Ancho de corte (header): 6 – 13.7 m
+- Capacidad del tanque de grano: 8,000 – 14,500 L
+- Caudal de descarga: 90 – 140 L/s
+- Combustible: Diésel
+
+### Casos de uso
+1. Cosecha de maíz de grano en grandes extensiones.
+2. Cosecha de trigo, cebada, avena y centeno.
+3. Cosecha de soya, sorgo, girasol y canola.
+4. Cosecha de arroz.
+5. Cosecha de semillas de forraje.
+
+---
+
+# Maquinaria para Demolición
+
+## Robot de Demolición
+
+### Información general
+- **Nombre común:** Robot de demolición, demoledor remoto
+- **Marcas:** Brokk, Husqvarna, Conjet
+- **Modelos típicos:** Brokk 200D, Brokk 500D, Husqvarna DXR 310
+- **Precio de renta:** $5,000 – $12,000 MXN/día
+
+### Especificaciones técnicas
+- Peso operativo: 800 – 3,000 kg
+- Potencia: Eléctrico o diésel
+- Alcance del brazo: 2.5 – 6 m
+- Control: Radio control remoto
+- Ancho mínimo de paso: 0.65 – 1.2 m
+- Accesorios: Martillo hidráulico, cizalla, cucharón
+
+### Casos de uso
+1. Demolición en espacios confinados.
+2. Demolición de concreto en interiores de edificios.
+3. Demolición de chimeneas y silos por el interior.
+4. Demolición submarina de pilotes.
+5. Demolición controlada con ocupantes en el edificio.
+6. Trabajos en ambientes peligrosos (asbesto, radiación).
+7. Perforación en túneles y obras subterráneas.
+
+---
+
+# Equipos para Agua y Saneamiento
+
+## Camión Vacuosucción (Vac Truck)
+
+### Sinónimos y variantes de lenguaje
+_camión vacuosucción, vactor, camión succionador, camión limpia fosas,
+succionador de lodos, hydrovac, vaciotanque, succionador de lodos,
+camión de fosas, limpieza de fosas sépticas, hydrovac para excavación
+sin dañar tuberías_
+
+### Información general
+- **Nombre común:** Camión vacuosucción, vactor
+- **Marcas:** Vactor, Guzzler, Hydrovac, DISAB, Kaiser
+- **Modelos típicos:** Vactor 2100i, Guzzler CXZ, Kaiser VSB-10
+- **Precio de renta:** $4,500 – $9,000 MXN/día
+
+### Especificaciones técnicas
+- Capacidad del tanque: 6,000 – 15,000 L
+- Presión de succión: hasta 27" Hg (vacío)
+- Presión del jet de agua: 100 – 200 bar
+- Caudal del jet: 150 – 300 L/min
+- Longitud de manguera: 60 – 150 m
+- Potencia de unidad de vacío: 200 – 350 HP
+
+### Casos de uso
+1. Limpieza de fosas sépticas.
+2. Limpieza de alcantarillado y colectores pluviales.
+3. Extracción de lodos en plantas de tratamiento.
+4. Excavación hidráulica (hydrovac) en zonas con tuberías.
+5. Limpieza de trampas de grasa.
+6. Extracción de derrames químicos y lodos industriales.
+7. Limpieza de registros y pozos de visita.
+8. Mantenimiento de lagunas de oxidación.
+9. Emergencias en derrames de crudo.
+10. Limpieza de silos y cisternas.
+
+---
+
+## Bomba de Achique / Bomba de Drenaje
+
+### Sinónimos y variantes de lenguaje
+_bomba de achique, bomba sumergible, bomba de drenaje, motobomba,
+bomba de lodos, bomba sumergible, dewatering pump, se me llenó de agua
+la excavación, necesito sacar el agua del hoyo, se inundó el sótano_
+
+### Información general
+- **Nombre común:** Bomba de achique
+- **Marcas:** Grundfos, Godwin (Xylem), Atlas Copco, Pioneer, Tsurumi, Sulzer
+- **Modelos típicos:** Godwin CD150M, Atlas Copco WEDA, Pioneer G4
+- **Precio de renta:** $500 – $3,500 MXN/día (según tamaño)
+
+### Especificaciones técnicas
+- Caudal máximo: 500 – 15,000 L/min
+- Altura manométrica total: 10 – 120 m
+- Diámetro de succión/descarga: 50 – 300 mm
+- Potencia del motor: 5 – 200 HP (eléctrico o diésel)
+- Temperatura máxima del líquido: 40 – 80°C
+- Sólidos manejables: hasta 50 mm
+
+### Casos de uso
+1. Achique de excavaciones y sótanos inundados.
+2. Drenaje de cimentaciones con nivel freático alto.
+3. Bombeo en minas subterráneas.
+4. Control de inundaciones urbanas.
+5. Drenaje de lagunas y estanques.
+6. Extracción de agua infiltrada en túneles.
+7. Bombeo de lodos en perforación de pozos.
+8. Trasvase de agua en emergencias.
+9. Circulación de agua en enfriamiento industrial.
+10. Sistemas de dewatering en cimentación profunda.
+
+---
+
+# Equipos Compactos a Gasolina
+
+## Apisonador / Compactadora Manual Tipo Rana
+
+### Sinónimos y variantes de lenguaje
+_rana compactadora, apisonador, jumping jack, bailedora, compactador de
+impacto, bailarina, pisón mecánico, necesito una rana, quiero compactar la
+zanja a mano, pisón mecánico, bailarina, jumping jack, bailedora_
+
+### Información general
+- **Nombre común:** Rana compactadora, apisonador
+- **Marcas:** Wacker Neuson, Mikasa, Bomag, Multiquip, Chicago Pneumatic, Rammax
+- **Modelos típicos:** Wacker BS60-4i, Mikasa MVC-60, Bomag BT60
+- **Precio de renta:** $300 – $800 MXN/día
+
+### Especificaciones técnicas
+- Peso operativo: 50 – 80 kg
+- Fuerza de impacto: 10 – 25 kN
+- Frecuencia de impacto: 400 – 700 golpes/min
+- Profundidad compactada por capa: 20 – 50 cm
+- Combustible: Gasolina
+- Consumo: 1.0 – 2.5 L/hr
+- Rendimiento: 30 – 80 m²/hr
+
+### Casos de uso
+1. Compactación de relleno en zanjas estrechas.
+2. Compactación alrededor de registros y pozos de visita.
+3. Relleno compactado de excavaciones pequeñas.
+4. Obras de bacheo: compactación de base y asfalto.
+5. Jardinería y paisajismo.
+6. Compactación de firmes en construcciones domiciliarias.
+7. Afirmado de pozos de absorción.
+8. Trabajos en interiores durante remodelaciones.
+9. Compactación en zanjas de acometidas.
+10. Mantenimiento de caminos rurales.
+
+---
+
+## Motobomba a Gasolina
+
+### Sinónimos y variantes de lenguaje
+_motobomba, bomba de gasolina, bomba portátil, bomba de achique a gasolina,
+bomba de desagüe, necesito sacar agua pero no hay luz, quiero una bomba de
+gasolina, desagüe portátil sin electricidad, sacar agua del pozo_
+
+### Información general
+- **Nombre común:** Motobomba a gasolina
+- **Marcas:** Honda, Robusi, Pioneer, Wacker Neuson, Tsurumi, ABS
+- **Modelos típicos:** Honda WT20, Robusi RBT-200, Pioneer G4-2
+- **Precio de renta:** $300 – $1,000 MXN/día
+
+### Especificaciones técnicas
+- Caudal máximo: 500 – 3,000 L/min
+- Altura manométrica máxima: 10 – 40 m
+- Diámetro de conexión: 2" – 6" (50 – 150 mm)
+- Sólidos: hasta 35 mm
+- Motor: Gasolina 5.5 – 15 HP
+- Succión máxima: 7 – 9 m
+- Autonomía: 3 – 6 hr
+
+### Casos de uso
+1. Achique en excavaciones de cimentación.
+2. Extracción de agua en sótanos inundados.
+3. Drenaje de albercas y cisternas.
+4. Riego con agua de pozo.
+5. Bombeo en obras sin electricidad.
+6. Desagüe de pozos de absorción.
+7. Baños temporales en campamentos de obra.
+8. Lavado de patios y áreas industriales.
+9. Bombeo de lodos ligeros en perforación manual.
+10. Emergencias en viviendas inundadas.
+
+---
+
+## Cortadora de Concreto y Asfalto
+
+### Sinónimos y variantes de lenguaje
+_cortadora de concreto, cortadora de pavimento, rotafresadora, cortadora
+de disco, asfaltadora de corte, máquina de corte en frío, necesito cortar
+el piso, quiero abrir el pavimento, cortar la losa_
+
+### Información general
+- **Nombre común:** Cortadora de concreto
+- **Marcas:** Husqvarna, Stihl, Partner, Diamond, Multiquip, Norton
+- **Modelos típicos:** Husqvarna K760, Stihl TS800, Husqvarna FS 513, Hilti DSH 700
+- **Precio de renta:** $400 – $1,500 MXN/día
+
+### Especificaciones técnicas
+- Profundidad máxima de corte: 10 – 35 cm
+- Diámetro del disco: 30 – 100 cm
+- Motor: Gasolina 4 – 30 HP
+- Combustible: Gasolina (mezcla 2T o 4T)
+- Peso: 80 – 400 kg (modelo de rodillo)
+- Tipo de corte: En frío con disco diamantado
+
+### Casos de uso
+1. Corte de juntas de dilatación en losas de concreto.
+2. Apertura de zanjas en pavimento asfáltico.
+3. Corte de banquetas y guarniciones.
+4. Demolición controlada de secciones de piso.
+5. Corte de asfalto para reparación de baches.
+6. Preparación para instalación de tubería de drenaje.
+7. Corte de losa para registros sanitarios.
+8. Ampliaciones de vivienda.
+9. Instalación de ductos a través de losas.
+10. Corte de rampas de acceso.
+
+---
+
+## Lavadora de Alta Presión a Gasolina
+
+### Sinónimos y variantes de lenguaje
+_hidrolavadora, lavadora a presión, power washer, hidrolimpiadora,
+lavadora de gasolina, máquina de presión, máquina de presión a gasolina,
+necesito lavar maquinaria en campo_
+
+### Información general
+- **Nombre común:** Hidrolavadora, lavadora a presión
+- **Marcas:** Kärcher, Husqvarna, Generac, Simpson, DeWalt, Comet
+- **Modelos típicos:** Kärcher G 5.3, Husqvarna PT650, Generac 6780
+- **Precio de renta:** $400 – $1,200 MXN/día
+
+### Especificaciones técnicas
+- Presión máxima: 150 – 400 bar
+- Caudal: 300 – 1,200 L/hr
+- Motor: Gasolina 5 – 15 HP
+- Consumo: 1 – 3 L/hr
+- Temperatura de agua: Fría o caliente (con caldera)
+- Peso: 30 – 80 kg
+
+### Casos de uso
+1. Limpieza de maquinaria pesada al finalizar obra.
+2. Lavado de fachadas y estacionamientos.
+3. Remoción de mugre en pisos industriales.
+4. Limpieza de tuberías de drenaje (accesorio jetter).
+5. Eliminación de grafiti.
+6. Limpieza de moldes de cimbra.
+7. Restauración de fachadas de cantera.
+8. Limpieza de tanques y cisternas.
+9. Sanitización en industria alimentaria.
+10. Mantenimiento de unidades de transporte.
+
+---
+
+## Generador Portátil a Gasolina
+
+### Sinónimos y variantes de lenguaje
+_planta de luz portátil, generador a gasolina, generador portátil, genset
+pequeño, planta de gasolina, planta de luz chica, generador pequeño para
+herramientas, quiero corriente donde no hay luz, generador de gasolina
+para obra_
+
+### Información general
+- **Nombre común:** Planta de luz portátil
+- **Marcas:** Honda, Generac, Briggs & Stratton, DeWalt, Champion, Multiquip
+- **Modelos típicos:** Honda EU22i, Generac GP3000i, Champion 4500W, DeWalt DXAERS4500
+- **Precio de renta:** $300 – $1,200 MXN/día
+
+### Especificaciones técnicas
+- Potencia máxima: 2 – 15 kVA
+- Potencia nominal: 1.8 – 13 kVA
+- Voltaje: 120/240V (monofásico)
+- Combustible: Gasolina
+- Capacidad del tanque: 5 – 30 L
+- Autonomía: 4 – 12 hr al 50% de carga
+- Ruido: 58 – 75 dB(A)
+- Peso: 25 – 120 kg
+
+### Casos de uso
+1. Energía para herramientas eléctricas en obra menor.
+2. Respaldo para iluminación en eventos pequeños.
+3. Alimentación de equipos de cómputo y sonido.
+4. Energía para campamentos de obra.
+5. Respaldo en viviendas durante cortes de luz.
+6. Carga de baterías en campo.
+7. Alimentación de bombas de agua en zonas rurales.
+8. Energía para soldadoras en campo.
+9. Refrigeración portátil en eventos.
+10. Respaldo para sistemas de seguridad en obra.
+
+---
+
+# Maquinaria para Espacios Reducidos y Accesos Estrechos
+
+_Nota: Esta categoría agrupa maquinaria diseñada para trabajar en espacios
+donde el ancho de paso es limitado (menos de 2 m), incluyendo pasillos de
+1.5 m, patios traseros, interiores de viviendas y zonas urbanas congestionadas._
+
+## Miniexcavadora de Ancho Ultrareducido (< 1.5 m)
+
+### Sinónimos y variantes de lenguaje
+_miniexcavadora angosta, microexcavadora, excavadora de pasillo estrecho,
+excavadora de jardinero, excavadora zero tail swing, excavadora para
+pasillo angosto, máquina de 0.99 m de ancho, excavadora chica que quepa
+por el pasillo, zero tail swing, tengo un pasillo de metro y medio,
+el acceso es muy angosto, solo cabe una máquina chica, necesito excavar
+en un patio trasero, el acceso es de 1.5 metros_
+
+### Información general
+- **Nombre común:** Miniexcavadora angosta, microexcavadora
+- **Marcas:** Kubota, Bobcat, Yanmar, Takeuchi, IHI, JCB
+- **Modelos típicos:** Kubota U17-3 (ancho: 0.99 m), Yanmar SV18 (1.3 m), IHI 18J (0.99 m), Bobcat E20 (1.3 m)
+- **Precio de renta:** $900 – $1,800 MXN/día
+
+### Especificaciones técnicas (modelo ultrarreducido)
+- Peso operativo: 1,200 – 2,500 kg
+- Potencia del motor: 10 – 20 HP
+- Capacidad del cucharón: 0.02 – 0.08 m³
+- Profundidad máxima de excavación: 2.2 – 3.0 m
+- **Ancho mínimo de paso: 0.75 – 1.5 m**
+- Altura de traslado: 2.0 – 2.4 m
+- Combustible: Diésel o Gasolina
+- Sistema de traslado: Orugas de goma
+
+### Casos de uso
+1. Excavación de pozos de absorción (sumideros) en patios con acceso por pasillo de 1.5 m o menos.
+2. Excavación de cimientos para ampliaciones en pasillos laterales estrechos.
+3. Apertura de zanjas para instalaciones hidrosanitarias en interiores.
+4. Excavación de fosas sépticas en propiedades con acceso restringido.
+5. Jardinería en patios con puertas angostas.
+6. Excavación para cisternas de captación pluvial.
+7. Desazolve de canales angostos en zonas urbanas.
+8. Excavación para postes y cercos en linderos.
+9. Paisajismo en condominios y hoteles.
+10. Excavación de drenajes pluviales en banquetas estrechas.
+
+---
+
+## Apisonador Manual Compacto
+
+### Información general
+- **Nombre común:** Bailedora, pisón manual, compactadora de mano
+- **Marcas:** Wacker Neuson, Mikasa, Multiquip
+- **Modelos típicos:** Wacker Neuson AP1850e, Mikasa MTR-60
+- **Precio de renta:** $200 – $500 MXN/día
+
+### Especificaciones técnicas (modelo para zanja angosta)
+- Peso operativo: 18 – 50 kg
+- Ancho de base: 15 – 35 cm
+- Fuerza de impacto: 5 – 15 kN
+- Combustible: Gasolina
+- Ideal para zanjas de ancho: 20 – 60 cm
+
+### Casos de uso específicos para pasillo de 1.5 m
+1. Compactación de relleno en zanjas dentro de patios estrechos.
+2. Pisoneo de capas de material en pozos de absorción excavados a mano o con miniexcavadora.
+3. Compactación alrededor de tuberías de drenaje en espacios confinados.
+
+---
+
+## Carretilla Motorizada / Dumper de Obra
+
+### Sinónimos y variantes de lenguaje
+_dumper, carretilla motorizada, buggy de obra, motocultor de carga,
+transporter, volquete pequeño, necesito un buggy, carretilla con motor
+para la obra, volquete pequeño, transporter de obra, vehículo chico
+para acarrear material_
+
+### Información general
+- **Nombre común:** Dumper, carretilla motorizada
+- **Marcas:** Wacker Neuson, Enarco, Multiquip, Toro, Thwaites
+- **Modelos típicos:** Wacker Neuson 3001, Enarco DCH-1000
+- **Precio de renta:** $500 – $1,200 MXN/día
+
+### Especificaciones técnicas
+- Capacidad de carga: 500 – 1,500 kg
+- Volumen de tolva: 0.3 – 0.8 m³
+- Ancho total: 0.8 – 1.4 m (pasa en pasillo de 1.5 m)
+- Motor: Gasolina o Diésel, 5 – 15 HP
+- Descarga: Volcamiento manual o hidráulico
+- Velocidad máxima: 8 – 15 km/h
+
+### Casos de uso
+1. Acarreo de material de excavación desde patios traseros por pasillos estrechos.
+2. Transporte de concreto en obras sin acceso para mixer.
+3. Movimiento de escombro en remodelaciones sin acceso vehicular.
+4. Suministro de relleno para pozos de absorción y cimentaciones.
+5. Carga en obras de banquetas y calles peatonales.
+6. Apoyo en restauración de edificios históricos.
+7. Manejo de tierra en invernaderos y viveros.
+8. Transporte en naves industriales.
+9. Acarreo en autoconstrucción.
+10. Obras de paisajismo en pendientes.
+
+---
+
+# Proyectos y Combinaciones Frecuentes
+
+_Los siguientes proyectos típicos describen las maquinarias que se rentan en conjunto._
+
+## Construcción de Carretera Rural
+
+- **Bulldozer:** desmonte y nivelación inicial.
+- **Motoniveladora:** conformación de subrasante y perfilado de cunetas.
+- **Compactadora vibradora:** compactación de capas de base y subbase.
+- **Cargador frontal + camiones volteo:** acarreo de material de préstamo.
+- **Retroexcavadora:** excavación de obras de drenaje (alcantarillas, cajas).
+- **Pavimentadora + compactadora de asfalto:** carpeta asfáltica final.
+
+## Edificio Comercial de 5 Pisos
+
+- **Excavadora hidráulica:** excavación de cimentación.
+- **Perforadora rotaria:** pilotes de cimentación profunda.
+- **Bomba de concreto estacionaria:** colado de losas y columnas.
+- **Grúa telescópica:** izaje de estructura metálica y equipos.
+- **Plataforma de tijera y boom lift:** trabajos en altura.
+- **Generador eléctrico:** respaldo energético.
+
+## Instalación de Red de Drenaje Urbano
+
+- **Retroexcavadora / excavadora:** apertura de zanjas.
+- **Compactadora de placa vibradora:** compactación de relleno.
+- **Telehandler:** manejo de tubería de gran diámetro.
+- **Camión de volteo:** retiro de material excavado.
+- **Camión vacuosucción:** limpieza de registros existentes.
+- **Bomba de achique:** control de agua subterránea.
+
+## Evento Masivo al Aire Libre (Concierto/Festival)
+
+- **Generadores industriales 500+ kVA:** suministro de energía.
+- **Plataforma de tijera:** instalación de sonido e iluminación.
+- **Boom lift:** posicionamiento de pantallas LED y escenario.
+- **Minicargador:** logística de materiales y montaje.
+
+## Mantenimiento de Planta Industrial
+
+- **Grúa telescópica:** izaje de equipos pesados.
+- **Plataforma articulada:** trabajos en altura.
+- **Compresor portátil:** herramientas neumáticas.
+- **Generador eléctrico:** respaldo durante paros.
+- **Robot de demolición:** demolición interna.
+
+## Pozo de Absorción (Sumidero) en Patio con Pasillo de 1.5 m
+
+### Maquinarias típicas
+- **Miniexcavadora ultrarreducida (ancho < 1.5 m):** excavación del pozo de 3-5 m de profundidad.
+- **Apisonador manual / rana compactadora:** compactación de relleno por capas.
+- **Motobomba a gasolina:** achique de agua si el nivel freático es alto.
+- **Dumper de obra angosto (ancho < 1.5 m):** acarreo de material excavado a través del pasillo.
+- **Camión de volteo:** recepción de material en la calle.
+
+### Consideraciones técnicas
+- Diámetro típico: 1.0 – 1.5 m.
+- Profundidad: 3-5 m según tipo de suelo.
+- Para pasillo de 1.5 m, solo caben miniexcavadoras con ancho de oruga < 1.5 m (zero tail swing).
+- Si el pasillo es < 1.2 m, la excavación debe ser manual con apoyo de equipo de izaje.
+- Se recomienda entibado si la profundidad supera 1.5 m en suelo suelto.
+- Para suelos arcillosos de baja absorción, se requieren varios pozos separados o pozo tipo zanja.
+
+_Sinónimos: pozo de absorción, sumidero, quiero hacer un pozo de absorción,
+necesito un sumidero para el drenaje, pozo de infiltración, drenaje pluvial
+en el patio, donde se vaya el agua de lluvia, agujero para que absorba el agua,
+quiero hacer una fosa, tengo un pasillo de metro y medio_
+
+## Drenaje Pluvial en Calle Estrecha (< 3 m de ancho)
+
+- **Miniexcavadora de orugas de goma:** excavación de zanja.
+- **Cortadora de concreto a gasolina:** corte de pavimento previo.
+- **Compactadora tipo rana:** compactación del relleno.
+- **Motobomba a gasolina:** achique de agua.
+- **Dumper angosto / carretilla motorizada:** retiro de material.
+- **Camión de volteo:** recepción de material en cabecera de calle.
+
+## Excavación de Cimentación en Casa con Acceso Estrecho
+
+- **Miniexcavadora ultrarreducida (< 1.5 m):** excavación de zanja perimetral.
+- **Apisonador manual tipo rana:** compactación de fondo.
+- **Carretilla motorizada / dumper:** acarreo de material.
+- **Cortadora de concreto a gasolina:** corte de losa o banqueta para acceso.
+- **Motobomba a gasolina:** achique de filtraciones.
+
+## Limpieza y Desazolve de Fosa Séptica en Zona Rural
+
+- **Camión vacuosucción:** succión de lodos y residuos.
+- **Bomba de achique a gasolina:** refuerzo de succión.
+- **Generador portátil a gasolina:** energía para equipo.
+- **Hidrolavadora a gasolina:** lavado de paredes y fondo.
+
+---
+
+_Fin del Catálogo de Maquinarias — Versión 2.0_

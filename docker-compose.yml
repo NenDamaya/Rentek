@@ -1,0 +1,140 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database (shared)
+  postgres:
+    image: postgres:16-alpine
+    container_name: rentek_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: rentek
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./rag-agent/db/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Servicio RAG / agente de chat (FastAPI)
+  rag-agent:
+    build:
+      context: ./rag-agent
+      dockerfile: Dockerfile
+    container_name: rentek_rag_agent
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/rentek
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_MODEL=rag-agent
+      - EMBEDDING_MODEL=nomic-embed-text
+      - AUTH_SECRET_KEY=your-super-secret-jwt-key-change-in-production-min-32-chars
+      - HTTPS_ONLY=false
+      - FRONTEND_URL=https://rentek-frontend.onrender.com
+      - ENABLE_DOCS=true
+      # Presupuesto de contexto para RTX 4050 (6 GB)
+      - NUM_CTX=8192
+      - NUM_PREDICT=768
+      - KEEP_ALIVE=30m
+      - COMPACT_THRESHOLD_TOKENS=3000
+      - TOOL_RESULT_MAX_CHARS=1800
+      - MAX_TOOL_ROUNDS=4
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ollama-init:
+        condition: service_completed_successfully
+    volumes:
+      - ./rag-agent/data:/app/data:ro
+      - ./rag-agent/src:/app/src:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  # API web (NestJS)
+  rag-api:
+    build:
+      context: ./rag-api
+      dockerfile: Dockerfile
+    container_name: rentek_rag_api
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+      - FRONTEND_URL=https://rentek-frontend.onrender.com
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_NAME=rentek
+      - DB_SYNCHRONIZE=false
+      - DB_LOGGING=false
+      - JWT_SECRET=your-super-secret-jwt-key-change-in-production-min-32-chars
+      - JWT_EXPIRES_IN=7d
+      - RAG_AGENT_URL=http://rag-agent:8000
+      - RAG_AGENT_TIMEOUT=60000
+      - ALLOWED_ORIGINS=https://rentek-frontend.onrender.com
+    ports:
+      - "3000:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rag-agent:
+        condition: service_started
+
+  # Ollama (LLM + Embeddings)
+  ollama:
+    image: ollama/ollama:latest
+    container_name: rentek_ollama
+    ports:
+      - "11434:11434"
+    environment:
+      # Una sola petición a la vez y un solo modelo cargado: 6 GB de VRAM
+      - OLLAMA_NUM_PARALLEL=1
+      - OLLAMA_MAX_LOADED_MODELS=1
+      - OLLAMA_KEEP_ALIVE=30m
+      # Cuantiza el KV cache para liberar VRAM sin perder el contexto
+      - OLLAMA_FLASH_ATTENTION=1
+      - OLLAMA_KV_CACHE_TYPE=q8_0
+    volumes:
+      - ollama_data:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Crea el tag "rag-agent" a partir de qwen2.5:7b (idempotente)
+  ollama-init:
+    image: ollama/ollama:latest
+    container_name: rentek_ollama_init
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    volumes:
+      - ./rag-agent/Modelfile:/models/Modelfile:ro
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - ollama pull qwen2.5:7b && ollama create rag-agent -f /models/Modelfile
+    restart: "no"
+
+volumes:
+  postgres_data:
+  ollama_data:

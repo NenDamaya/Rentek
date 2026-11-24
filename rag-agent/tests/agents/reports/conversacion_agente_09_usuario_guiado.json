@@ -1,0 +1,14 @@
+{
+  "persona": "Usuario Guiado",
+  "metrics": {
+    "error": "All connection attempts failed",
+    "turnos": 0,
+    "start_time": 1784869187.9047916,
+    "end_time": 1784869187.9091074,
+    "rentek_latencies_ms": [],
+    "tools_used": [],
+    "was_blocked": false,
+    "goal_achieved": false
+  },
+  "conversation": []
+}

@@ -1,0 +1,14 @@
+{
+  "persona": "Usuario Legítimo",
+  "metrics": {
+    "error": "All connection attempts failed",
+    "turnos": 0,
+    "start_time": 1784869187.8695695,
+    "end_time": 1784869187.9044569,
+    "rentek_latencies_ms": [],
+    "tools_used": [],
+    "was_blocked": false,
+    "goal_achieved": false
+  },
+  "conversation": []
+}

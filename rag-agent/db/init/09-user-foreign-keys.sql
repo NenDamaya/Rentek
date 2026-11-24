@@ -1,0 +1,2 @@
+ALTER TABLE solicitudes_renta ADD COLUMN IF NOT EXISTS user_id INTEGER REFERENCES users(id);
+ALTER TABLE cotizaciones ADD COLUMN IF NOT EXISTS user_id INTEGER REFERENCES users(id);
