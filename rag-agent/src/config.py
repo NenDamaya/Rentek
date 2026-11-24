@@ -12,6 +12,9 @@ class Config:
     NUM_PREDICT = int(os.getenv("NUM_PREDICT", "768"))
     TEMPERATURE = float(os.getenv("TEMPERATURE", "0.3"))
     KEEP_ALIVE = os.getenv("KEEP_ALIVE", "30m")
+    # qwen3 razona antes de responder. Para el chat de atención conviene
+    # desactivarlo: gasta tokens y puede agotar num_predict sin dar respuesta.
+    OLLAMA_THINK = os.getenv("OLLAMA_THINK", "false").lower() == "true"
 
     # Compactación de historial: se dispara cuando el prompt supera este
     # presupuesto real (tokens estimados) y conserva los últimos turnos.

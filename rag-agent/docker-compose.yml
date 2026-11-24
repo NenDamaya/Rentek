@@ -51,6 +51,7 @@ services:
       NUM_CTX: ${NUM_CTX:-8192}
       NUM_PREDICT: ${NUM_PREDICT:-768}
       KEEP_ALIVE: ${KEEP_ALIVE:-30m}
+      OLLAMA_THINK: ${OLLAMA_THINK:-false}
       COMPACT_THRESHOLD_TOKENS: ${COMPACT_THRESHOLD_TOKENS:-3000}
       TOOL_RESULT_MAX_CHARS: ${TOOL_RESULT_MAX_CHARS:-1800}
       MAX_TOOL_ROUNDS: ${MAX_TOOL_ROUNDS:-4}
@@ -85,7 +86,7 @@ services:
       - ./Modelfile:/models/Modelfile:ro
     entrypoint: ["/bin/sh", "-c"]
     command:
-      - ollama pull qwen2.5:7b && ollama create rag-agent -f /models/Modelfile
+      - ollama pull qwen3:8b && ollama create rag-agent -f /models/Modelfile
     restart: "no"
 
   ngrok:

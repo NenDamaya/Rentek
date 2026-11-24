@@ -3,6 +3,7 @@ chroma_db
 .rag_latencies.json
 .git
 .gitignore
+.env
 .opencode
 node_modules
 *.md

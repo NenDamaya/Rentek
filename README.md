@@ -7,7 +7,7 @@ Tres proyectos independientes que se comunican por HTTP:
 | Frontend | `rag-frontend/` | Svelte + Vite. UI del chat y catálogo. | 5173 |
 | API | `rag-api/` | NestJS. Auth, usuarios, catálogo, carrito, cotizaciones, solicitudes, chats. | 3000 |
 | RAG / chat | `rag-agent/` | FastAPI. Recuperación, herramientas, orquestación del LLM y streaming. | 8000 |
-| LLM | contenedor `ollama` | tag `rag-agent` (base `qwen2.5:7b`) + `nomic-embed-text` sobre GPU. | 11434/11435 |
+| LLM | contenedor `ollama` | tag `rag-agent` (base `qwen3:8b`) + `nomic-embed-text` sobre GPU. | 11434/11435 |
 
 ## Estado de la separación
 
@@ -103,7 +103,7 @@ sudo systemctl enable --now ollama
 sudo systemctl status ollama --no-pager
 
 # 5. Descargar la base y crear el tag del chat
-ollama pull qwen2.5:7b
+ollama pull qwen3:8b
 ollama pull nomic-embed-text
 cd /home/damaya/Documentos/Rentek/rag-agent
 ollama create rag-agent -f Modelfile

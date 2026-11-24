@@ -1,6 +1,6 @@
-FROM qwen2.5:7b
+FROM qwen3:8b
 
 # Tag propio del chat de Rentek. No duplica los pesos: reutiliza los blobs
-# de qwen2.5:7b y solo crea un manifiesto nuevo.
+# de qwen3:8b y solo crea un manifiesto nuevo.
 PARAMETER num_ctx 8192
 PARAMETER temperature 0.3

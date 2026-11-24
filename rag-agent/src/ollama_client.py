@@ -46,9 +46,8 @@ INSTRUCCIONES:
                 "system": system_prompt,
                 "stream": False,
                 "keep_alive": config.KEEP_ALIVE,
+                "think": config.OLLAMA_THINK,
                 "options": {
-                    "num_gpu": 999,
-                    "main_gpu": 0,
                     "num_predict": config.NUM_PREDICT,
                     "num_ctx": config.NUM_CTX,
                     "temperature": config.TEMPERATURE,
@@ -73,7 +72,8 @@ INSTRUCCIONES:
             "messages": messages,
             "stream": False,
             "keep_alive": config.KEEP_ALIVE,
-            "options": {"num_gpu": 999, "main_gpu": 0, "num_predict": config.NUM_PREDICT, "num_ctx": config.NUM_CTX, "temperature": config.TEMPERATURE},
+            "think": config.OLLAMA_THINK,
+            "options": {"num_predict": config.NUM_PREDICT, "num_ctx": config.NUM_CTX, "temperature": config.TEMPERATURE},
         }
         if tools:
             body["tools"] = tools
@@ -100,7 +100,8 @@ INSTRUCCIONES:
             "messages": messages,
             "stream": True,
             "keep_alive": config.KEEP_ALIVE,
-            "options": {"num_gpu": 999, "main_gpu": 0, "num_predict": config.NUM_PREDICT, "num_ctx": config.NUM_CTX, "temperature": config.TEMPERATURE},
+            "think": config.OLLAMA_THINK,
+            "options": {"num_predict": config.NUM_PREDICT, "num_ctx": config.NUM_CTX, "temperature": config.TEMPERATURE},
         }
         if tools:
             body["tools"] = tools
@@ -135,7 +136,8 @@ INSTRUCCIONES:
             "messages": messages,
             "stream": True,
             "keep_alive": config.KEEP_ALIVE,
-            "options": {"num_gpu": 999, "main_gpu": 0, "num_predict": config.NUM_PREDICT, "num_ctx": config.NUM_CTX, "temperature": config.TEMPERATURE},
+            "think": config.OLLAMA_THINK,
+            "options": {"num_predict": config.NUM_PREDICT, "num_ctx": config.NUM_CTX, "temperature": config.TEMPERATURE},
         }
         if tools:
             body["tools"] = tools

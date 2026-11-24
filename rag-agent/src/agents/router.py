@@ -20,6 +20,8 @@ class Router:
         r"\b(casos?\s+de\s+uso|recomendado\s+para|aplicaciones)\b",
         r"\b(c[uú]anto\s+pesa|dimensiones|capacidad|potencia|consumo)\b",
         r"\b(documentaci[oó]n|manual|gu[ií]a|informativo)\b",
+        r"\b(categor[ií]as?|cat[aá]logo|tipos?\s+de\s+maquinaria)\b",
+        r"\b(qu[eé]\s+maquinaria\s+(tienen|manejan|ofrecen|hay))\b",
     ]
 
     # ============ PATRONES TRANSACCIONALES ============

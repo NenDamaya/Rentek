@@ -39,6 +39,7 @@ services:
       - NUM_CTX=8192
       - NUM_PREDICT=768
       - KEEP_ALIVE=30m
+      - OLLAMA_THINK=false
       - COMPACT_THRESHOLD_TOKENS=3000
       - TOOL_RESULT_MAX_CHARS=1800
       - MAX_TOOL_ROUNDS=4
@@ -119,7 +120,7 @@ services:
       timeout: 10s
       retries: 3
 
-  # Crea el tag "rag-agent" a partir de qwen2.5:7b (idempotente)
+  # Crea el tag "rag-agent" a partir de qwen3:8b (idempotente)
   ollama-init:
     image: ollama/ollama:latest
     container_name: rentek_ollama_init
@@ -132,7 +133,7 @@ services:
       - ./rag-agent/Modelfile:/models/Modelfile:ro
     entrypoint: ["/bin/sh", "-c"]
     command:
-      - ollama pull qwen2.5:7b && ollama create rag-agent -f /models/Modelfile
+      - ollama pull qwen3:8b && ollama create rag-agent -f /models/Modelfile
     restart: "no"
 
 volumes:
