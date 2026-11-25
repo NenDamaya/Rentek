@@ -9,7 +9,7 @@ services:
     environment:
       - OLLAMA_HOST=0.0.0.0
       - OLLAMA_NUM_PARALLEL=1
-      - OLLAMA_MAX_LOADED_MODELS=1
+      - OLLAMA_MAX_LOADED_MODELS=2
       - OLLAMA_KEEP_ALIVE=30m
       - OLLAMA_FLASH_ATTENTION=1
       - OLLAMA_KV_CACHE_TYPE=q8_0
@@ -46,8 +46,10 @@ services:
       - "8000:8000"
     environment:
       OLLAMA_BASE_URL: http://ollama:11434
-      OLLAMA_MODEL: ${OLLAMA_MODEL:-rag-agent}
-      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-nomic-embed-text}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-rag-agent:8b}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-bge-m3}
+      COLLECTION_NAME: ${COLLECTION_NAME:-rentek_catalog_bge_m3}
+      CHROMA_PERSIST_DIR: /app/chroma_db
       NUM_CTX: ${NUM_CTX:-8192}
       NUM_PREDICT: ${NUM_PREDICT:-768}
       KEEP_ALIVE: ${KEEP_ALIVE:-30m}
@@ -65,6 +67,8 @@ services:
       GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:-}
       GOOGLE_REDIRECT_URI: ${GOOGLE_REDIRECT_URI:-http://localhost:8000/auth/google/callback}
       FRONTEND_URL: ${FRONTEND_URL:-http://localhost:5173}
+    volumes:
+      - ./chroma_db:/app/chroma_db:Z
     depends_on:
       ollama:
         condition: service_started
@@ -84,9 +88,14 @@ services:
       - OLLAMA_HOST=http://ollama:11434
     volumes:
       - ./Modelfile:/models/Modelfile:ro
+      - ./Modelfile.4b:/models/Modelfile.4b:ro
     entrypoint: ["/bin/sh", "-c"]
     command:
-      - ollama pull qwen3:8b && ollama create rag-agent -f /models/Modelfile
+      - >
+        ollama pull qwen3:8b &&
+        ollama create rag-agent:8b -f /models/Modelfile &&
+        ollama pull qwen3:4b &&
+        ollama create rag-agent:4b -f /models/Modelfile.4b
     restart: "no"
 
   ngrok:

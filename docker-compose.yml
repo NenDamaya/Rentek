@@ -29,8 +29,10 @@ services:
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/rentek
       - OLLAMA_BASE_URL=http://ollama:11434
-      - OLLAMA_MODEL=rag-agent
-      - EMBEDDING_MODEL=nomic-embed-text
+      - OLLAMA_MODEL=rag-agent:8b
+      - EMBEDDING_MODEL=bge-m3
+      - COLLECTION_NAME=rentek_catalog_bge_m3
+      - CHROMA_PERSIST_DIR=/app/chroma_db
       - AUTH_SECRET_KEY=your-super-secret-jwt-key-change-in-production-min-32-chars
       - HTTPS_ONLY=false
       - FRONTEND_URL=https://rentek-frontend.onrender.com
@@ -53,6 +55,7 @@ services:
     volumes:
       - ./rag-agent/data:/app/data:ro
       - ./rag-agent/src:/app/src:ro
+      - ./rag-agent/chroma_db:/app/chroma_db:Z
     deploy:
       resources:
         reservations:
@@ -98,9 +101,9 @@ services:
     ports:
       - "11434:11434"
     environment:
-      # Una sola petición a la vez y un solo modelo cargado: 6 GB de VRAM
+      # Chat + embeddings pueden convivir: 8b (~4.6 GB) + bge-m3 (~0.7 GB)
       - OLLAMA_NUM_PARALLEL=1
-      - OLLAMA_MAX_LOADED_MODELS=1
+      - OLLAMA_MAX_LOADED_MODELS=2
       - OLLAMA_KEEP_ALIVE=30m
       # Cuantiza el KV cache para liberar VRAM sin perder el contexto
       - OLLAMA_FLASH_ATTENTION=1
@@ -120,7 +123,7 @@ services:
       timeout: 10s
       retries: 3
 
-  # Crea el tag "rag-agent" a partir de qwen3:8b (idempotente)
+  # Crea los tags rag-agent:8b (chat) y rag-agent:4b (JSON estructurado)
   ollama-init:
     image: ollama/ollama:latest
     container_name: rentek_ollama_init
@@ -131,9 +134,14 @@ services:
       - OLLAMA_HOST=http://ollama:11434
     volumes:
       - ./rag-agent/Modelfile:/models/Modelfile:ro
+      - ./rag-agent/Modelfile.4b:/models/Modelfile.4b:ro
     entrypoint: ["/bin/sh", "-c"]
     command:
-      - ollama pull qwen3:8b && ollama create rag-agent -f /models/Modelfile
+      - >
+        ollama pull qwen3:8b &&
+        ollama create rag-agent:8b -f /models/Modelfile &&
+        ollama pull qwen3:4b &&
+        ollama create rag-agent:4b -f /models/Modelfile.4b
     restart: "no"
 
 volumes:

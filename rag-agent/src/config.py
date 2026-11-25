@@ -2,8 +2,10 @@ import os
 
 class Config:
     OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11435")
-    OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "rag-agent")
-    EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "nomic-embed-text")
+    # Modelo principal del chat: qwen3:8b con plantilla que respeta think=false.
+    # rag-agent:4b queda para generación estructurada (JSON) por su plantilla.
+    OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "rag-agent:8b")
+    EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "bge-m3")
 
     # === Presupuesto de contexto (RTX 4050 Laptop - 6 GB VRAM) ===
     # num_ctx incluye prompt + respuesta. En 6 GB no conviene subirlo de 8192
@@ -39,7 +41,7 @@ class Config:
     RERANK_ENABLED = os.getenv("RERANK_ENABLED", "false").lower() == "true"
     RERANK_TOP_N = int(os.getenv("RERANK_TOP_N", "5"))
 
-    COLLECTION_NAME = os.getenv("COLLECTION_NAME", "rag_knowledge_base")
+    COLLECTION_NAME = os.getenv("COLLECTION_NAME", "rentek_catalog_bge_m3")
 
     API_HOST = os.getenv("API_HOST", "0.0.0.0")
     API_PORT = int(os.getenv("API_PORT", "8000"))

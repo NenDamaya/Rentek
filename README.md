@@ -7,7 +7,7 @@ Tres proyectos independientes que se comunican por HTTP:
 | Frontend | `rag-frontend/` | Svelte + Vite. UI del chat y catálogo. | 5173 |
 | API | `rag-api/` | NestJS. Auth, usuarios, catálogo, carrito, cotizaciones, solicitudes, chats. | 3000 |
 | RAG / chat | `rag-agent/` | FastAPI. Recuperación, herramientas, orquestación del LLM y streaming. | 8000 |
-| LLM | contenedor `ollama` | tag `rag-agent` (base `qwen3:8b`) + `nomic-embed-text` sobre GPU. | 11434/11435 |
+| LLM | contenedor `ollama` | `rag-agent:8b` (chat) y `rag-agent:4b` (JSON) + `bge-m3` sobre GPU. | 11434/11435 |
 
 ## Estado de la separación
 
@@ -42,7 +42,7 @@ Mientras se completa la migración, el orden recomendado es:
 docker compose up -d --build
 ```
 
-Servicios: `postgres`, `ollama`, `ollama-init` (crea el modelo `rag-agent`),
+Servicios: `postgres`, `ollama`, `ollama-init` (crea `rag-agent:8b` y `rag-agent:4b`),
 `rag-agent` (RAG/chat) y `rag-api` (API).
 El frontend se compila aparte (Render o `pnpm build` en `rag-frontend/`).
 
@@ -104,14 +104,27 @@ sudo systemctl status ollama --no-pager
 
 # 5. Descargar la base y crear el tag del chat
 ollama pull qwen3:8b
-ollama pull nomic-embed-text
+ollama pull qwen3:4b
+ollama pull bge-m3
 cd /home/damaya/Documentos/Rentek/rag-agent
-ollama create rag-agent -f Modelfile
+ollama create rag-agent:8b -f Modelfile
+ollama create rag-agent:4b -f Modelfile.4b
 ollama list
 ```
 
 Con Docker no necesitas los pasos 3–5: el servicio `ollama-init` crea
-`rag-agent` automáticamente al hacer `docker compose up`.
+`rag-agent:8b` y `rag-agent:4b` automáticamente al hacer `docker compose up`.
+
+Después de cambiar el modelo de embeddings hay que reindexar el catálogo:
+
+```bash
+cd rag-agent
+RESET=1 python scripts/reindex_catalog.py
+```
+
+El chat principal usa `rag-agent:8b` porque `qwen3:4b` en Ollama ignora
+`think:false` y razona en el contenido. `rag-agent:4b` queda para generar JSON
+estructurado (paquetes), donde el formato forzado evita ese problema.
 
 ### pnpm
 

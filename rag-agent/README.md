@@ -2,12 +2,17 @@
 
 API FastAPI para el agente de chat y RAG de renta de maquinaria pesada. Corre en la laptop y se expone via ngrok.
 
-El LLM se sirve con Ollama usando el tag `rag-agent`, creado a partir de
-`qwen3:8b` con el `Modelfile` de esta carpeta:
+El LLM se sirve con Ollama con dos tags:
+
+- `rag-agent:8b` — chat principal (respeta `think:false`).
+- `rag-agent:4b` — generación JSON estructurada (paquetes).
 
 ```bash
 ollama pull qwen3:8b
-ollama create rag-agent -f Modelfile
+ollama pull qwen3:4b
+ollama pull bge-m3
+ollama create rag-agent:8b -f Modelfile
+ollama create rag-agent:4b -f Modelfile.4b
 ```
 
 ## Stack
@@ -15,7 +20,7 @@ ollama create rag-agent -f Modelfile
 - Python 3.12
 - FastAPI + Uvicorn
 - PostgreSQL 16
-- Ollama (GPU) - qwen3:8b + nomic-embed-text
+- Ollama (GPU) - qwen3:8b (chat) / qwen3:4b (JSON) + bge-m3
 
 ## Correr con Docker
 
@@ -46,9 +51,9 @@ ngrok http 8000
 | Variable | Default |
 |----------|---------|
 | `OLLAMA_BASE_URL` | `http://ollama:11434` |
-| `OLLAMA_MODEL` | `rag-agent` |
+| `OLLAMA_MODEL` | `rag-agent:8b` |
 | `OLLAMA_THINK` | `false` |
-| `EMBEDDING_MODEL` | `nomic-embed-text` |
+| `EMBEDDING_MODEL` | `bge-m3` |
 | `DB_HOST` | `postgres` |
 | `DB_PORT` | `5432` |
 | `DB_NAME` | `maquinaria_rag` |
